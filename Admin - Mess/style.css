@@ -4,6 +4,7 @@ body {
     display: flex;
     font-family: "Baloo Bhaina 2";
     color: #616161;
+    overflow-y: hidden;
 }
 
 * {
@@ -142,6 +143,7 @@ h1 {
     height: 100%;
     display: flex;
     flex-direction: row;
+    overflow: hidden;
 
 }
 .mess-left{
@@ -193,30 +195,49 @@ h1 {
     border-radius: 3px;
     background: #ECECEC;
     padding: 5px 10px;
- 
-
+    cursor: pointer;
+    border: 2px solid #ECECEC ;
 }
+.chuadoc:hover{
+    
+    background-color: #ffffff;
+}
+
+
 
 .theodoi{
     display: flex;
     border-radius: 3px;
     background: #ECECEC;
     padding: 5px 10px;
+    cursor: pointer;
+    border: 2px solid #ECECEC ;
     
 }
+.theodoi:hover{
+    background-color: #ffffff;
+}
+
 .theodoi svg{
     padding-top: 8%;
 
 }
 .mess-icon-loc{
     padding-top: 2%;
+    cursor: pointer;
 }
 
 .mess-client{
     width: 100%;
-    padding-top: ;
+    display: flex;
+    flex-direction: column;
     
 }
+.client:hover{
+    background-color:#ECECEC;
+    transition: 0.1s;
+}
+
 .client{
     position: relative;
     display: flex;
@@ -224,10 +245,14 @@ h1 {
     padding-left: 5%;
     padding-top: 2%;
     padding-bottom: 2%;
-    background-color:#ECECEC;;
+    background-color:white;
     
 
 }
+#client-now{
+    background-color:#ECECEC;
+}
+
 a{
     text-decoration: none;
 }
@@ -270,7 +295,9 @@ a{
 .mess-right{
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     width: 60%;
+    height: 100%;
     border-left: 1px #C8C0C0;;
 }
 .mess-right-name{
@@ -329,7 +356,7 @@ a{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: auto;
+    height: 100vh;
     
 }
 .gio{
@@ -381,6 +408,56 @@ a{
     line-height: 20%;
 
 }
+.reptn{
+    position: absolute;
+    bottom: 10px;
+    top: 100;
+    left: 100;
+    width: 100%;
+    display: flex;
+}
+.reptn img{
+    position: absolute;
+    top: 10%;
+    left: 4%;
+    width: 29px;
+    height: 29px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.reptn input{
+    /* position: absolute;
+    bottom: 0; */
+    color: #848484;
+    font-size: 15px;
+    font-weight: 500;
+    width: 96%;
+    height: 94px;
+    border-radius: 15px;
+    border: 0.5px solid rgb(172, 172, 172);
+    box-sizing: border-box;
+    padding: 10px 61px;
+    margin-left: 20px ;
+    margin-bottom: 5px;
+    padding-bottom: 49px;
+
+
+}
+.reptn-icon{
+    width: 18%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 9px;
+    right: 35px;
+}
+.ghim{
+    box-sizing: border-box;
+    margin-top: -4px;
+}
+
+
 
 
 /* .vi_tri {
