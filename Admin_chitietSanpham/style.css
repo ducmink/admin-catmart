@@ -1,0 +1,564 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    font-family: "Baloo Bhaina 2";
+    color: #616161;
+}
+
+* {
+    margin: 0;
+}
+
+.sidebar_area {
+    width: 13%;
+    background: #DE744C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: static;
+}
+
+h1 {
+    font-family: 'Coiny';
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #FFF;
+    font-size: 30px;
+    margin-top: 12%;
+    margin-bottom: 20%;
+}
+
+.categories_list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.categories_list li {
+    font-size: 1rem;
+    font-weight: 600;
+    list-style: none;
+    color: #FFF;
+    box-sizing: border-box;
+    padding: 5% 0 5% 3.5vw;
+    display: flex;
+    align-items: center;
+    height: 20%;
+}
+
+.categories_list a {
+    text-decoration: none;
+    color: white;
+}
+
+.list_item button {
+    border: none;
+    background-color: unset;
+}
+
+#now {
+    background-color: #FFF4F4;
+    color: #DE744C;
+}
+
+
+.categories_list li:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    /* margin: 2px; */
+}
+
+.categories_list li span {
+    margin-left: 5%;
+    margin-right: 20%;
+}
+
+.main_area {
+    width: 87%;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+.header {
+    background-color: #E8B6A3;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+}
+
+.header p {
+    color: #616161;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.admin_infor {
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+
+.admin_infor img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.vi_tri {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    padding: 5px 3%;
+    gap: 10px;
+}
+
+.vi_tri .line {
+    width: 1px;
+    height: 13px;
+    background: #A1A1A1;
+}
+
+.vi_tri .pre_lo {
+    color: #A1A1A1;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.vi_tri .now_lo {
+    font-weight: 600;
+}
+
+.line_vitri {
+    height: 1px;
+    background-color: #D4D4D4;
+    margin: 0px 3%;
+}
+
+h3 {
+    color: #616161;
+    font-size: 32px;
+    font-weight: 600;
+
+}
+
+.add_data {
+    display: flex;
+    padding: 0px 3%;
+    gap: 30px;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 13vw;
+    top: 189px;
+    background: #FFF4F4;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #838383;
+    padding: 7px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+}
+
+.dropdown-content a:first-child {
+    border-bottom: 3px solid #e4dfdf;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    color: #DE744C;
+}
+
+.show {
+    display: block;
+}
+
+
+.dropbtn1 {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown1 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    left: 13vw;
+    top: 470px;
+    background: #FFF4F4;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content1 a {
+    color: #838383;
+    padding: 7px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+}
+
+.dropdown-content1 a:first-child {
+    border-bottom: 3px solid #e4dfdf;
+}
+
+.dropdown-content1 a:hover {
+    color: #DE744C;
+}
+
+.show1 {
+    display: block;
+}
+
+.title_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 3%;
+}
+
+.bang {
+    padding: 5px 3%;
+}
+
+.right {
+    display: flex;
+    max-width: 80%;
+    gap: 10px;
+}
+
+/* ========product============= */
+
+.product{
+
+}
+.product-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.product-content-left{
+    width: 40%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    padding-top: 2%;
+}
+
+.product-content-left-big-img{
+    width: 100%;
+    height: 80%;
+    padding-right: 20px;
+
+}
+.product-content-left-big-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 0.1px solid rgb(189, 189, 189);
+    border-radius: 5px;
+    padding: 2% 0;
+    border: 0.1px solid rgb(189, 189, 189);
+    box-sizing: border-box;
+    box-shadow: #616161 2px 3px 5px;
+}
+.product-content-left-small-img{
+    width: 100%;
+    height: 20%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.product-content-left-small-img img{
+    width: 23%;
+    height: 100%;
+    border-radius: 3px;
+    box-sizing: border-box;
+    box-shadow: #616161 2px 3px 5px;
+
+}
+.product-content-right{
+    position: relative;
+    width: 60%;
+    padding: 3% 2%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.product-content-right-product-name p{
+    font-size: 50px;
+    line-height: 125%;
+    font-weight: 600;
+    color: black;
+}
+.product-content-right-product-name-brand{
+    font-size: 25px;
+}
+.product-content-right-product-name-brand span{
+    color: black;
+    font-weight: 400;
+}
+.product-content-right-product-name-brand a{
+    color: blue;
+    text-decoration: none;
+}
+.product-content-right-product-name-rate{
+    position: relative;
+    display: flex;
+    padding-top: 0;
+}
+.product-content-right-product-name-rate span{
+    font-size: 20px;
+    color: blue;
+    font-weight: 400;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    box-sizing: border-box;
+}
+.product-content-right-product-price{
+
+    margin-top: -3%;
+}
+.product-content-right-product-price span{
+    font-size: 30px;
+    color: black;
+}
+.product-content-right-product-price .price{
+    font-size: 80px;
+    color: #940000;
+    font-weight: 700;
+
+    padding-left: 1%;
+}
+.product-content-right-line{
+    position: absolute;
+    top: 53%;
+    height: 0.5px;
+    width: 42%;
+    background-color: #939393;
+}
+.product-content-right-soluonghienco{
+    padding-top: 2%;
+}
+
+.product-content-right-soluonghienco span{
+    font-size: 20px;
+    color: rgb(95, 95, 95);
+    font-weight: 400;
+    padding-right: 4%;
+
+}
+.product-content-right-soluonghienco input{
+    padding: 8px;
+    width: 5%;
+    
+}
+.donvisanpham{
+    padding-top: 2%;
+    display: flex;
+    flex-direction: row;
+}
+
+.donvisanpham .dv{
+    color: rgb(95, 95, 95);
+    font-size: 20px;
+}
+
+.donvisanpham .tui{
+    font-size: 20px;
+    width: 59px;
+    height: 31px;
+    text-align: center;
+    color: black;
+    margin-left: 3.8%;
+    border-radius: 2px;
+    border: 0.5px solid rgb(119, 119, 119);
+
+}
+
+.product-content-right-mahang{
+    font-size: 20px;
+    padding-top: 2%;
+    font-weight: 400;
+    color: rgb(95, 95, 95);
+}
+
+.product-content-right-product-button{
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.thongso{
+    color: white;
+    background-color: #DE744C;
+    border: none;
+    width: 48%;
+    height: 150%;
+    font-family:"Baloo Bhaina 2";
+    font-size: 28px;
+}
+.thongso:hover{
+    cursor: pointer;
+    background-color: #ee8f6d;
+    color: white;
+    
+}
+
+.edit{
+    color: white;
+    background-color: #DE744C;
+    border: none;
+    width: 48%;
+    height: 150%;
+    font-family:"Baloo Bhaina 2";
+    font-size: 28px;
+}
+.edit:hover{
+    cursor: pointer;
+    background-color: #ee8f6d;
+    color: white;
+}
+
+/* =======mota-danhgia============= */
+
+.mota-danhgia{
+    border-bottom: 1px solid #a5a5a5;
+}
+
+.grp-details-btn {
+    font-size: 20px;
+    display: flex;
+    margin-top: 3%;
+    margin-left: 13%;
+}
+.grp-details-btn .des-btn.active {
+    border-top: #FF8A00 solid 2px;
+    color: #CE3800;
+}
+.grp-details-btn .des-btn {
+    border-inline: #ddd solid 1px;
+    border-top: #ddd solid 1px;
+    width: 10%;
+    height: 10%;
+    margin: 0;
+    color: #ddd;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.edit-mota-danhgia{
+    /* display: flex;
+    flex-direction: row; */
+}
+
+/* .edit-mota{
+    width: 70%;
+} */
+.text.des {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 3%;
+    width: 65%;
+    gap: 5px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-bottom: #ddd solid 1px
+}
+
+.mota-tiltle{
+    border: 1px solid #c7c7c7;
+    padding: 1%;
+    line-height: 170%;
+    border-radius: 4px;
+}
+.loiich-title {
+    border: 1px solid #c7c7c7;
+    padding: 1%;
+    line-height: 170%;
+    border-radius: 4px;
+}
+.huongdan-title{
+    border: 1px solid #c7c7c7;
+    padding: 1%;
+    line-height: 170%;
+    border-radius: 4px;
+}
+
+.edit-mota-area{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.product-infor{
+    position: relative;
+    padding-top: 7%;
+    padding-left: 2%;
+    width: 35%;
+}
+.trongluong{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+.trongluong span{
+     font-size: 20px;
+}
+
+.trongluong input{
+    padding: 2% 2%;;
+    position: absolute;
+    width: 30%;
+    top: 0;
+    right: 10%;
+    align-items: flex-end;
+}
+.product-infor-line{
+   
+    top: 40%;
+    height: 0.8px;
+    width: 90%;
+    background-color: #939393;
+    margin: 4% 0%;
+}
+

@@ -1,0 +1,459 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    font-family: "Baloo Bhaina 2";
+    color: #616161;
+}
+
+* {
+    margin: 0;
+}
+
+.sidebar_area {
+    width: 13vw;
+    background: #DE744C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: static;
+}
+
+h1 {
+    font-family: 'Coiny';
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #FFF;
+    font-size: 30px;
+    margin-top: 12%;
+    margin-bottom: 20%;
+}
+
+.categories_list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.categories_list li {
+    font-size: 1rem;
+    font-weight: 600;
+    list-style: none;
+    color: #FFF;
+    box-sizing: border-box;
+    padding: 5% 0 5% 3.5vw;
+    display: flex;
+    align-items: center;
+    height: 20%;
+}
+
+.categories_list a {
+    text-decoration: none;
+    color: white;
+}
+
+.list_item button {
+    border: none;
+    background-color: unset;
+}
+
+#now {
+    background-color: #FFF4F4;
+    color: #DE744C;
+}
+
+
+.categories_list li:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    /* margin: 2px; */
+}
+
+.categories_list li span {
+    margin-left: 5%;
+    margin-right: 20%;
+}
+
+.main_area {
+    width: 87vw;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+.header {
+    background-color: #E8B6A3;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+}
+
+.header p {
+    color: #616161;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.search {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search input {
+    height: 45%;
+    font-size: 14px;
+    padding-left: 41px;
+    width: 50%;
+    border-radius: 8px;
+    background: #FFF;
+    border: none;
+}
+
+.search svg {
+    position: relative;
+    left: 29px;
+}
+
+.admin_infor {
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+
+.admin_infor img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.TaiKhoan{
+    position: relative;
+    padding: 2vw 3vw;
+    /* margin-left: 3vw; */
+    display: flex;
+    flex-direction: column;
+}
+
+.Thongtinvaquanly{
+    display: flex;
+    flex-direction: column ;
+}
+#TTTK{
+    font-size: 32px;
+    font-weight: 600;
+}
+#QLTT{
+    position: relative;
+    margin-top: -1vw;
+
+}
+
+.lineTT{
+    height: 0.75px;
+    width: 70%;
+    background: #c3c3c3;
+}
+
+.thongtindangnhap {
+    position: relative;
+    padding: 4vw;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+.tendangnhap{
+    padding: 1.5%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+
+}
+.tendangnhap div {
+    padding-left: 26px ;
+    display: flex;
+    flex-direction: column;
+
+}
+.tendangnhap div span {
+    position: relative;
+    align-content: center;
+    margin-top: 3px;
+    font-size: 14px;
+    color: #a5a5a5;
+}
+.title_dangnhap{
+    text-align: right;
+    width: 150px;
+    font-size: 20px;
+    font-weight: 450;
+    color: #797979;
+}
+
+.boxtendangnhap{
+    align-content: right;
+    font-family: "Baloo Bhaina 2";
+    padding: 10px;
+    width: 36vw;
+    height: 20px;
+    border-radius: 10px;
+    border-color: #c4c4c4;
+    border-style: double;
+
+}
+
+.email{
+    padding: 1.5%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+.email div{
+    width: 70%;
+    font-size: 20px;
+    margin-left: 26px;
+    display: flex;
+    flex-direction: row;
+}
+.email div div{
+    width: fit-content;
+}
+.email div div span{
+    padding: 0px 15px;
+    margin-right: 20px;
+
+}
+#email_tt{
+    font-weight: 420;
+    color: #383838;
+    margin-right: 5%;
+}
+#email_change{
+    color: blue;
+    text-decoration: underline;
+
+}
+#email_change:hover{
+    color: cornflowerblue;
+    cursor: pointer;
+}
+#date {
+    margin-left: 27px;
+    width: 20%;
+    border-color: #797979;
+    border-radius: 6px;
+    font-family: "Baloo Bhaina 2";
+    font-size: 15px;
+}
+#month{
+    width: 24%;
+    border-radius: 6px;
+    margin-left: 20px;
+    font-family: "Baloo Bhaina 2";
+    font-size: 15px;
+}
+#year{
+    width: 24%;
+    border-radius: 6px;
+    margin-left: 20px;
+    font-family: "Baloo Bhaina 2";
+    font-size: 15px;
+}
+.SaveButton{
+    padding: 5% 50% ;
+}
+.SaveButton button{
+    font-family: "Baloo Bhaina 2";
+    font-size: 17px;
+    background-color: #DE744C;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+.SaveButton button:hover{
+    background-color: #fe8e65;
+    color: #fdfdfd;
+}
+.avatarAdmin{
+    position: absolute;
+    width: 20%;
+    height: 50%;
+    top: 19%;
+    left: 75%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+.avatarAdmin img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatarAdmin button{
+    font-family:"Baloo Bhaina 2" ;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    border: 0.5px solid #949494;
+    border-radius: 2px;
+    width: 110px;
+    height: 40px;
+    background-color:#dbdbdb;
+    margin-left: 22%;
+    margin-top: 10%;
+}
+.avatarAdmin button:hover{
+    background-color: white;
+    cursor: pointer;
+    
+}
+.avatarAdmin span{
+
+
+
+
+
+    
+}
+
+.avatarAdmin .dungluong {
+    font-weight: 400;
+    margin-top: 5px;
+
+}
+
+
+/* .vi_tri {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    padding: 5px 3%;
+    gap: 10px;
+}
+
+.vi_tri .line {
+    width: 1px;
+    height: 13px;
+    background: #A1A1A1;
+}
+
+.vi_tri .pre_lo {
+    color: #A1A1A1;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.vi_tri .now_lo {
+    font-weight: 600;
+}
+
+.line_vitri {
+    height: 1px;
+    background-color: #D4D4D4;
+    margin: 0px 3%;
+}
+ */
+
+
+
+
+/* ===========dropdown============= */
+
+.dropbtn {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 13vw;
+    top: 189px;
+    background: #FFF4F4;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #838383;
+    padding: 7px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+}
+
+.dropdown-content a:first-child {
+    border-bottom: 3px solid #e4dfdf;
+}
+
+.dropdown-content a:hover {
+    color: #DE744C;
+}
+
+.show {
+    display: block;
+}
+
+
+.dropbtn1 {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown1 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    left: 13vw;
+    top: 470px;
+    background: #FFF4F4;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content1 a {
+    color: #838383;
+    padding: 7px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+}
+
+.dropdown-content1 a:first-child {
+    border-bottom: 3px solid #e4dfdf;
+}
+
+.dropdown-content1 a:hover {
+    color: #DE744C;
+}
+
+
+.show1 {
+    display: block;
+}
