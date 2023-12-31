@@ -262,9 +262,11 @@
                     <span>Mã hàng: 8809039029394</span>
                   </div>
                   <div class="product-content-right-product-button">
-                    <button class="thongso">
+                    <a href="../AdminTrangchu/Homeadmin.html">
+                      <button class="thongso">
                       <p>Xem thông số thống kê</p>
                     </button>
+                    </a>
                     <button class="edit">Chỉnh sửa thông tin sản phẩm</button>
                   </div>
                 
@@ -333,10 +335,92 @@
 
             </div>
         </div>
-      </div>
+        <div class="overlay">
+          <div class="overlay-left">
+            <div class="overlay-left-product-name">
+              <p>Tên sản phẩm</p>
+              <textarea name="tensanpham" id="" cols="30" rows="10" placeholder="Nhập tên sản phẩm mới"></textarea>
+            </div>
+            <div class="overlay-left-product-mota">
+              <p>Mô tả sản phẩm</p>
+              <textarea name="tensanpham" id="" cols="30" rows="10" placeholder="Nhập mô tả sản phẩm"></textarea>
+            </div>
+            <div class="overlay-left-uploadfile">
+              <span>Hoặc tải file nội dung lên</span>
+              <input type="file">
+            </div>
+            <div class="overlay-left-product-thuonghieu">
+              <p>Thương hiệu</p>
+              <textarea name="tensanpham" id="" cols="30" rows="10" placeholder="Nhập thương hiệu"></textarea>
+            </div>
+            <div class="overlay-left-product-phanloai-madonhang">
+              <div class="phanloai">
+                <p>Phân loại</p>
+                <textarea name="tensanpham" id="" cols="10" rows="1" placeholder="Nhập thương hiệu"></textarea>
+              </div>
+              <div class="overlay-left-product-phanloai-madonhang-line">
+                <!-- đường line dọc -->
+              </div>
+              <div class="phanloai">
+                <p>Mã sản phẩm</p>
+                <textarea name="tensanpham" id="" cols="10" rows="1" placeholder="">#8809039029394</textarea>
+              </div>
+            </div>
+          </div>
+          <div class="overlay-right">
+            <div class="overlay-right-giaban">
+              <p>Giá bán:</p>
+              <textarea name="giaban" id="" cols="30" rows="10">25.000</textarea> 
+              <span>Đ</span>
+            </div>
+            <div class="overlay-right-img">
+              <div class="overlay-right-img-big">
+                <img src="./Image/sp7.jpg" alt="">
+              </div>
+              <div class="overlay-right-img-small">
+                <img src="./Image/sp2.webp" alt="">
+                <img src="./Image/sp2.webp" alt="">
+                <img src="./Image/sp2.webp" alt="">
+                <img src="./Image/sp2.webp" alt="">
+              </div>
+            </div>
+            <div class="uploadimg">
+              <input type="file">
+              <p>Dung lượng tối đa 1MB</p>
+              <p>Định dạng JPEG, PNG</p>
+            </div>
+            <button class="themsp-button">Thêm sản phẩm</button>
+            
+          </div>
+          <div class="iconX">
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+              <g filter="url(#filter0_d_193_3010)">
+                <rect x="5" y="5" width="34" height="34" rx="17" fill="white"/>
+              </g>
+              <path d="M15 15L29 29" stroke="#997B7B" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M15 29L29 15" stroke="#997B7B" stroke-width="1.5" stroke-linecap="round"/>
+              <defs>
+                <filter id="filter0_d_193_3010" x="0" y="0" width="44" height="44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                  <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_193_3010"/>
+                  <feOffset/>
+                  <feGaussianBlur stdDeviation="2"/>
+                  <feComposite in2="hardAlpha" operator="out"/>
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_193_3010"/>
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_193_3010" result="shape"/>
+                </filter>
+              </defs>
+            </svg></span>
+          </div>
+        </div>
+    </div>
+    <div class="bg-black"></div>
+    
         
     
 </body>
-<script src="/CatMart/Admin_taikhoanAdmin/script.js"></script>
+<script src="./script.js"></script>
 
 </html>

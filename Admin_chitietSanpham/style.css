@@ -428,8 +428,8 @@ h3 {
     color: white;
     background-color: #DE744C;
     border: none;
-    width: 48%;
-    height: 150%;
+    width: 138%;
+    height: 155%;
     font-family:"Baloo Bhaina 2";
     font-size: 28px;
 }
@@ -444,8 +444,8 @@ h3 {
     color: white;
     background-color: #DE744C;
     border: none;
-    width: 48%;
-    height: 150%;
+    width: 49%;
+    height: 155%;
     font-family:"Baloo Bhaina 2";
     font-size: 28px;
 }
@@ -562,3 +562,239 @@ a {
     margin: 4% 0%;
 }
 
+/* =====================popup================== */
+
+.overlay{
+    position: fixed;
+    z-index: 1000;
+    display: none;
+    top: 31vh;
+    left: 41vw;
+    transform: translate(-50%,-50%);
+    flex-direction: row;
+    width: 65%;
+    height: 80%;
+    margin: 10%;
+    border: 1px solid #616161;
+    border-radius: 4px;
+    background-color: white;
+}
+.overlay::after{
+    position: absolute;
+
+}
+.overlay textarea{
+    font-family:"Baloo Bhaina 2";
+    resize: none;
+    box-sizing: border-box;
+
+    padding-top: 0.5%;
+    padding-left: 1%;
+    border-radius: 5px;
+    border: 0.5px solid #A1A1A1;
+}
+.overlay-left{
+    padding-top: 2%;
+    padding-left: 2%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.overlay-right{
+    width: 20%;
+}
+.overlay-left-product-name{
+    height: 21%;
+    width: 90%;
+}
+
+.overlay-left-product-name p{
+    font-size: 28px;
+    font-weight: 600;
+    color: black;
+}
+.overlay-left-product-name textarea{
+    width: 100%;
+    height: 45%;
+    font-size: 18px;
+}
+.overlay-left-uploadfile{
+    padding-top: 1.3%;
+    font-size: 16px;
+
+}
+.overlay-left-product-mota{
+    margin-top: -2%;
+    width: 90%;
+    height: 40%;
+}
+.overlay-left-product-mota p{
+    font-size: 28px;
+    font-weight: 600;
+    color: black;
+}
+
+.overlay-left-product-mota textarea{
+    width: 100%;
+    height: 80%;
+    font-size: 18px;
+
+}
+
+.overlay-left-product-thuonghieu{
+    width: 90%;
+    height: 20%;
+}
+.overlay-left-product-thuonghieu p{
+    font-size: 28px;
+    font-weight: 600;
+    color: black;
+}
+.overlay-left-product-thuonghieu textarea{
+    width: 100%;
+    height: 35%;
+    font-size: 18px;
+}
+.overlay-left-product-phanloai-madonhang{
+    position: relative;
+    margin-top: -3%;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    /* padding-bottom: 5%; */
+}
+.overlay-left-product-phanloai-madonhang .phanloai{
+    margin-right: 28%;
+}
+
+.overlay-left-product-phanloai-madonhang .phanloai textarea{
+    width: 165%;
+    height: 30%;
+    font-size: 18px;
+    padding: 5%;
+    box-sizing: border-box;
+}
+.phanloai p{
+    font-size: 28px;
+    font-weight: 600;
+    color: black;
+}
+.overlay-left-product-phanloai-madonhang-line{
+    width: 2.5px;
+    height: 70%;
+    position: absolute;
+    top: 4%;
+    left: 39%;
+    border-radius: 1px;
+    background-color: #B6B4B4;
+}
+
+.overlay-right{
+    padding-top: 3%;
+    width: 30%;
+    height: 100%;
+}
+.overlay-right-giaban{
+    position: relative;
+}
+
+.overlay-right-giaban p{
+    font-size: 30px;
+    font-weight: 500;
+    color: black;
+
+}
+
+.overlay-right-giaban textarea{
+    margin-top: -6%;
+    width: 201px;
+    height: 102px;
+    font-size: 65px;
+    font-weight: 450;
+    color: #AC0000;
+    overflow: hidden;
+    border: none;
+    outline: none;
+}
+.overlay-right-giaban span{
+    font-size: 65px;
+    font-weight: 450;
+    color: #AC0000;
+    position: absolute;
+    top: 25%;
+}
+
+.overlay-right-img{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60%;
+    padding-right: 4%;
+    box-sizing: border-box;
+}
+.overlay-right-img-big{
+    width: 100%;
+    height: 60%;
+    box-shadow: -5px 3px 6px rgba(43, 43, 43, 0.5);
+    border-radius: 4px;
+}
+.overlay-right-img-big img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.overlay-right-img-small{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 3%;
+    width: 100%;
+    height: 40%;
+}
+.overlay-right-img-small img{
+    height: 40%;
+    object-fit: cover;
+    box-shadow: -5px 3px 6px rgba(43, 43, 43, 0.5);
+    border-radius: 4px;
+}
+
+.uploadimg{
+    position: absolute;
+    top: 77%;
+}
+
+.uploadimg p {
+    font-size: 16px;
+    margin-top: -4%;
+}
+.themsp-button{
+    background-color: #E8B6A3;
+    color: white;
+    width: 100%;
+    height: 6%;
+    font-family: "Baloo Bhaina 2" ;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+}
+
+.iconX{
+    margin-top: -22px;
+    margin-right: -24px;
+    cursor: pointer;
+}
+
+.bg-black{
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
