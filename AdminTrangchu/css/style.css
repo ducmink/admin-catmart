@@ -145,9 +145,11 @@ body{
 
 .toggle{
     position: relative;
-    color: white;
+    color: #616161;
     display: flex;
     justify-content: center;
+    font-weight: 600;
+    font-size: 18px;
     align-items: center;
     cursor: pointer;
     margin: -100px;
