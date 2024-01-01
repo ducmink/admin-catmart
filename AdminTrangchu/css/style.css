@@ -53,8 +53,6 @@ body{
     position: relative;
     width: 100%;
     list-style: none;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
 }
 .navigation ul li:hover{
     background-color: rgba(255, 255, 255, 0.5);
@@ -116,8 +114,7 @@ body{
 #now{
     background-color: white;
     color: #DE744C;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+
 }
 /* .navigation a:hover {
     margin-left: 15px;
